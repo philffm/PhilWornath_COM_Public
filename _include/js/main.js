@@ -77,8 +77,8 @@ CHAKRA.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/onlinemarketing.jpg', title : '<div class="slide-content">Online Marketing...</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/user.jpg', title : '<div class="slide-content">...with your users experience in mind</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/webdesign.jpg', title : '<div class="slide-content">User Experience Solutions...</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/webdesign.jpg', title : '<div class="slide-content">...with your Business in mind</div>', thumb : '', url : ''},
 											 
 									],
 									
@@ -396,88 +396,6 @@ CHAKRA.toolTip = function(){
 }
 
 /* ==================================================
-   Map
-================================================== */
-
-CHAKRA.map = function(){
-	if($('.map').length > 0)
-	{
-
-		$('.map').each(function(i,e){
-
-			$map = $(e);
-			$map_id = $map.attr('id');
-			$map_lat = $map.attr('data-mapLat');
-			$map_lon = $map.attr('data-mapLon');
-			$map_zoom = parseInt($map.attr('data-mapZoom'));
-			$map_title = $map.attr('data-mapTitle');
-			
-			
-			
-			var latlng = new google.maps.LatLng($map_lat, $map_lon);			
-			var options = { 
-				scrollwheel: false,
-				draggable: false, 
-				zoomControl: false,
-				disableDoubleClickZoom: false,
-				disableDefaultUI: true,
-				zoom: $map_zoom,
-				center: latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-			
-			var styles = [ 
-							{
-							  stylers: [
-								{ hue: "#2F3238" },
-								{ saturation: -20 }
-							  ]
-							}, {
-								featureType: "road",
-								elementType: "geometry",
-								stylers: [
-									{ lightness: 100 },
-									{ visibility: "simplified" }
-							  ]
-							}, {
-								featureType: "road",
-								elementType: "labels",
-								stylers: [
-									{ visibility: "off" }
-							  ]
-							}
-						];
-			
-			var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
-			
-			var map = new google.maps.Map(document.getElementById($map_id), options);
-		
-			var image = '_include/img/marker.png';
-			var marker = new google.maps.Marker({
-				position: latlng,
-				map: map,
-				title: $map_title,
-				icon: image
-			});
-			
-			map.mapTypes.set('map_style', styledMap);
-  			map.setMapTypeId('map_style');
-			
-			var contentString = '<p><strong>Company Name</strong><br>Address here</p>';
-       
-			var infowindow = new google.maps.InfoWindow({
-				content: contentString
-			});
-			
-			google.maps.event.addListener(marker, 'click', function() {
-      			infowindow.open(map,marker);
-    		});
-
-		});
-	}	
-}
-
-/* ==================================================
 	Init
 ================================================== */
 
@@ -533,3 +451,22 @@ $(window).resize(function(){
 });
 
 });
+
+
+ /* Navigation Fix
+    -----------------------------------------------------*/
+    
+		$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});

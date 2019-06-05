@@ -18,7 +18,7 @@
 <title>Phil Wornath</title>   
 
 <meta name="author" content="Phil Wornath">
-<meta name="description" content="Online Marketing with the UX in mind">
+<meta name="description" content="User Experience with your Bussiness in mind.">
 <meta name="keywords" content="webdesign,ux,consulting,beratung,den haag,the hague,seo,optimierung,api">
 <meta name="robots" content="index, follow">
 
@@ -33,6 +33,10 @@
 
 <!-- Bootstrap -->
 <link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
 
 
 <!-- Main Style -->
@@ -52,15 +56,11 @@
 <!-- Shortcodes -->
 <link href="_include/css/shortcodes.css" rel="stylesheet">
 
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
 <!-- Custom CSS -->
 <link href="_include/css/custom.css" rel="stylesheet">
 
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="icon" type="image/png" href="favicon.ico" />
 
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -112,7 +112,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Homepage Slider -->
 <div id="home-slider">	
     <div class="overlay"></div>
-
+    <video autoplay muted loop id="myVideo">
+        <source src="_include/vid/head.mp4" type="video/mp4">
+      </video>
+      
 	<div class="container">
     	<div class="row">
         	<div class="span12">
@@ -124,11 +127,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>   
 	
 	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+     
         <a id="logo2"></a>
-        <ul id="slide-list"></ul>
-        
+        <div class="scrolldown">
+            <div class="scroll-down svg" id="home-scroll-down">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 25.166666 37.8704414" enable-background="new 0 0 25.166666 37.8704414" xml:space="preserve">
+                    <path class="stroke" fill="none" stroke="#c7c4b8" stroke-width="2.5" stroke-miterlimit="10" d="M12.5833445 36.6204414h-0.0000229C6.3499947 36.6204414 1.25 31.5204487 1.25 25.2871208V12.5833216C1.25 6.3499947 6.3499951 1.25 12.5833216 1.25h0.0000229c6.2333269 0 11.3333216 5.0999947 11.3333216 11.3333216v12.7037992C23.916666 31.5204487 18.8166714 36.6204414 12.5833445 36.6204414z"></path>
+                    <path class="scroller" fill="#c7c4b8" d="M13.0833359 19.2157116h-0.9192753c-1.0999985 0-1.9999971-0.8999996-1.9999971-1.9999981v-5.428606c0-1.0999994 0.8999987-1.9999981 1.9999971-1.9999981h0.9192753c1.0999985 0 1.9999981 0.8999987 1.9999981 1.9999981v5.428606C15.083334 18.315712 14.1833344 19.2157116 13.0833359 19.2157116z"></path>
+                </svg><i class="icon icon-arrow-down"></i>
+            </div>
+        </div>
+
         <a id="nextsection" href="#aboutme"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
 </div>
@@ -147,7 +156,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         	<ul id="menu-nav">
             	<li class="current"><a href="#home-slider">Home</a></li>
             	<li><a href="#aboutme">About Me</a></li>
-                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#myprojects">My Projects</a></li>
+                <li><a href="#processes">Methods</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -161,21 +171,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
     <!-- Title Page -->
     <div class="row">
+        
       <div class="span8 title-page">
             <h2 class="title">Hi there, <strong>I'm Phil</strong></h2>                                
-                <div class="tabbable">
-					<ul class="nav nav-tabs" id="myTab">
-				<li class="active"><a href="#bio" data-toggle="tab">Bio</a></li>
-				<li><a href="#resume" data-toggle="tab">résumé</a></li>
-					</ul>
-  
+					
 			<div class="tab-content">
-				<div class="tab-pane fade in active" id="bio">
+				<div class="tab-pane  active" >
                         <h3>Your digital counterpart in <strong>The Hague, NL.</strong></h3>
                         <ol><li>
-    <h4><strong>Online Marketing</strong> and <strong>UX Design</strong> are my passions &amp; professions.</h4></li>
+    <h4>Marketable and scalable <strong>UX Design</strong> is my passion and profession.</h4></li>
                            
-    <li><h4><strong>A tailormade Online Marketing</strong> with <strong>conversion-optimized User Experience (UX)</strong> in mind is the key for your future proof business.</h4></li>
+    <li><h4><strong>A tailormade User Experience strategy</strong> is  key for your future proof business.</h4></li>
                         </ol>
                         <div class="info-cta">
                             <div class="info-cta-item"><h3><b>Curious?</b></h3></div>                        
@@ -183,31 +189,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="info-cta-item"><h3>or</h3></div>
                             <div class="info-cta-item"><a class="button-cta"  href="tel:00491725679252"><span></span><i class="socicon-viber"></i> Call me now </a></div>
                         </div>
-				</div>
          
-				<div class="tab-pane fade in" id="resume">
-                    <h4>Educational stuff</h4>
-                    
-                    <strong>2018-now:</strong> B.Sc - User Experience Design @ The Hague University, Netherlands<br>
-                    <strong>2013-2015:</strong> Ernst-Reuter-Schule I (High School), Frankfurt<br>
-					<strong>2005-2013:</strong> Ziehenschule (High School), Frankfurt<br><br>
-
-                    
-                    <h4>Internships</h4>
-                    <strong>2013, 2014:</strong> Das Ei - Medienproduktion GmbH<br>
-                    <strong>2011:</strong> Continental Teves AG & Co. OHG<br>
-                    <strong>2006, 2008, 2010:</strong> daenet Gesellschaft für Informationstechnologie mbH<br><br>
-
-					
-                    <h4>Jobs</h4>
-                    <strong>2015-2018:</strong> Online Marketing at Performics<br>
-					<strong>2012-2016:</strong> Self-employed Web/IT Consultant<br>
-					<strong>2009-2013</strong> IT-Consultant at Bundesland Hessen<br>
-
-
-
-
-				</div>
+				
          
 
 			</div>
@@ -218,7 +201,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    
 		<div class="span4 profile">
 			<div class="image-wrap">
-                <img src="_include/img/profile/phil.jpg" alt="Phil Wornath" style="border-radius: 50%;border-radius: 50%;border-style: solid;border-width: 10px;border-color: #41c4ab99;">
+                <img src="_include/img/profile/phil.jpg" alt="Phil Wornath" >
+                <img src="_include/img/profile/phil_has_fun.jpg" alt="Phil Wornath" >
+
             </div>
             
                         <div class="social">
@@ -236,43 +221,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Title Page -->
 
         <!-- Portfolio Projects -->
-        <div class="row"> 
+        <div class="row" id="myprojects">
         	<div class="span12">
             	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Projects</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".web">Web/SEM</a></li>
-                        <li><a href="#filter" data-option-value=".ux">UX</a></li>
-                    </ul>
-                </nav>
+               
+
+
                 <!-- End Filter -->
             </div>
             
             <div class="span12">
             	<div class="row">
-                                	            	                                	<section id="projects">
-
-                    	<ul id="thumbs">
+                    <nav id="options" class="work-nav">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li class="type-work">Projects</li>
+                            <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                            <li><a href="#filter" data-option-value=".web">Web/SEM</a></li>
+                            <li><a href="#filter" data-option-value=".ux">UX</a></li>
+                        </ul>
+                    </nav>
 							<!-- WEBDESIGN PROJECTS -->
+                        <section id="projects">
 
+                            <ul id="thumbs">
 
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
+                        	<li class="item-thumbs span4 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="3MW Fahrzeugtechnik GmbH" href="_include/img/work/3mw.jpg">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-search"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/3mw_th.jpg" alt="Strategic consulting / Web / Social Media">
+                                <img src="_include/img/work/3mw.jpg" alt="Strategic consulting / Web / Social Media">
                             </li>
                         	<!-- End Item Project -->
 
 
 					 	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
+                        	<li class="item-thumbs span4 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="BRATISTA Berlin - Digital Marketing Agency" href="_include/img/work/bratista.jpg">
                                     <span class="overlay-img"></span>
@@ -286,7 +273,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         	
                         	
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
+                        	<li class="item-thumbs span4 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="CholCo e.V. - Cholesterin und Co" href="_include/img/work/cholco.jpg">
                                     <span class="overlay-img"></span>
@@ -298,7 +285,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         	<!-- End Item Project -->
                         
 									<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
+                        	<li class="item-thumbs span4 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Zukunft für Homberg" href="_include/img/work/full/zfh.jpg">
                                     <span class="overlay-img"></span>
@@ -313,7 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         	
                         	
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
+                        	<li class="item-thumbs span4 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Zeil Frankfurt" href="_include/img/work/full/zeilffm.jpg">
                                     <span class="overlay-img"></span>
@@ -325,7 +312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         	<!-- End Item Project -->
                         	
                         	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
+                        	<li class="item-thumbs span4 web">
                                 <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Geis Immobilien" href="_include/img/work/full/geis.jpg">
                                     <span class="overlay-img"></span>
@@ -334,32 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <!-- Thumb Image and Description -->
                                 <img src="_include/img/work/thumbs/geis-th.jpg" alt="I worked as a freelancer and photographer.">
                             </li>
-                        	<!-- End Item Project -->
-                        	
-                        	
-                       
-
-
-                        	
-                        	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 web">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="ZShelp" href="_include/img/work/full/zshelp.jpg">
-                                    <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/zshelp-th.jpg" alt="A school-internal knowledge database and social communication tool based on Joomla.">
-                            </li>
-                        	<!-- End Item Project -->
-
-
-
-
-
-
-
-                            
+                        	<!-- End Item Project -->  
 							
                         </ul>
                     </section>
@@ -371,7 +333,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </div>
 
-
+<div class="container services" id="processes">
+    <div class="row">
+        <div class="span4">
+            <div class="services-box">
+                <div class="icon">
+                    <span class="font-icon-cog"></span>
+                </div>
+                <h3>Analysis & Research</h3>
+                <p>Before we start with the operational part of your product, I follow a strong analytical and research-driven process, in which data and insights are gathered and crucial pain points of your customers are documented.</p>
+            </div>
+        </div>
+        
+        <div class="span4">
+            <div class="services-box">
+                <div class="icon">
+                    <span class="font-icon-layer"></span>
+                </div>
+                <h3>Design Thinking Process</h3>
+                <p>During the process, gathered insights are translated into objectives and give a starting point for design ideas. This process contains design vision, HMW questions, user portraits and finally leads towards the creation of user tested low- and high fidelity prototypes.  </p>
+            </div>
+        </div>
+        
+        <div class="span4">
+            <div class="services-box">
+                <div class="icon">
+                    <span class="font-icon-heart"></span>
+                </div>
+                <h3>Implementation</h3>
+                <p>Design done? I will assist you during the entire implementation process, gather insights of stakeholders and analytic tools and over time set measures for further optimizations in the overall User Experience. </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Big Blockquote -->
 <div class="big-quote page">
@@ -467,13 +461,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h3 class="credits">I am very social as well. </h3>
                 <nav id="social">
                     <ul>
-	                    
-	                    						<li><a href="https://www.linkedin.com/in/phil-wornath-95b64925/" title="Find me on Linkedin" target="_blank"><span class="socicon-linkedin"></span></a></li>
-
+	                    <li><a href="https://www.linkedin.com/in/phil-wornath-95b64925/" title="Find me on Linkedin" target="_blank"><span class="socicon-linkedin"></span></a></li>
 						<li><a href="https://www.xing.com/profile/Phil_Wornath?sc_o=mxb_p" title="Find me on XING" target="_blank"><span class="socicon-xing"></span></a></li>
                         <li><a href="https://twitter.com/philwornath" title="Follow Me on Twitter" target="_blank"><span class="socicon-twitter"></span></a></li>
                         <li><a href="https://www.facebook.com/philwornath" title="Find me on Facebook" target="_blank"><span class="socicon-facebook"></span></a></li>
-                        <li><a href="https://plus.google.com/106702515870923726863" title="Follow Me on G+" target="_blank"><span class="socicon-googleplus"></span></a></li>
                     </ul>
                 </nav>
             </div>
