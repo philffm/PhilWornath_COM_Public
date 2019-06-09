@@ -375,7 +375,7 @@ h3.spec {
 
 #home-slider .container .row {
 	position: absolute;
-	bottom: 100px;
+	bottom: 170px;
 }
 
 #home-slider .slider-text {
@@ -391,8 +391,8 @@ h3.spec {
 	font-size: 60px;
 	font-weight: 300;
 	color: #FFFFFF;
-	letter-spacing: -2px;
-	line-height: 3em;
+	letter-spacing: 0px;
+	line-height: 1em;
 	text-transform: uppercase;
 	margin: 0;
 }
