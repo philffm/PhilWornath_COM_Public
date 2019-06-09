@@ -13,3 +13,14 @@ Enter Here your Custom CSS Style!!
   .image-wrap:hover img:first-child {
     display: none;  
   }
+
+
+  #contact-form p {
+    display: flex;
+    flex-flow: column;
+}
+
+#contact-form .submit {
+  display: flex;
+    flex-flow: column;
+}
