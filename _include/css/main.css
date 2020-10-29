@@ -882,6 +882,8 @@ font-weight: bolder;
 
 .work-nav #filters li a.selected {
 	color: #41c4ab;
+	font-size: 24px;
+
 }
 
 #thumbs {
@@ -1091,7 +1093,7 @@ font-weight: bolder;
     margin: 20px;
 	margin-top: 100px;
 	margin-bottom: 70px;
-	border-radius: 15px;
+	border-radius: 7px;
 	text-align: center;
 }
 
