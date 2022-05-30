@@ -1571,6 +1571,19 @@ font-weight: bolder;
 /* ==================================================
    Social Area
 ================================================== */
+section.projectscv {
+	background: #F5F6F6;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 32px 0; */
+}
+
+/* ==================================================
+   Social Area
+================================================== */
 
 #social-area {
     text-align: center;
