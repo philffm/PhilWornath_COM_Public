@@ -1,9 +1,18 @@
-# Block access to .git and .vscode directories
+# Deny access to .git and .vscode directories
 <DirectoryMatch "^(.*/)?(\.git|\.vscode)(/.*)?$">
     Require all denied
 </DirectoryMatch>
 
 # If DirectoryMatch is not supported, use this alternative:
 RewriteEngine On
+
+# Block access to .git directory
 RewriteRule ^\.git(/|$) - [F,L]
+
+# Block access to .vscode directory
 RewriteRule ^\.vscode(/|$) - [F,L]
+
+# Allow all other files and directories to be served
+<FilesMatch ".*">
+    Require all granted
+</FilesMatch>
